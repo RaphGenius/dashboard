@@ -20,6 +20,7 @@ export const ContextProvider = ({ children }) => {
   };
   const [screenSize, setScreenSize] = useState(undefined);
 
+  //On vérifie si un mode et couleur sont dans le ls, sinon on donne une valeur par défaut
   const lsCurrentMode = localStorage.getItem("themeMode")
     ? localStorage.getItem("themeMode")
     : "Light";
